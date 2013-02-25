@@ -1,4 +1,4 @@
 php-encriptator
 ===============
 
-PHP Encriptator
+PHP Encriptator, encrypt and decrypt with password.
