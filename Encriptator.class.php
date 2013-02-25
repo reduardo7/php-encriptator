@@ -18,7 +18,7 @@ class Encriptator {
     const LEVEL_2 = false;
 
     /**
-     * Code to encript the key.
+     * Code to encrypt the key.
      */
     private $ENCRYPT_CODE_X;
 
@@ -97,7 +97,6 @@ class Encriptator {
         $k = '';
         $m = md5($key . $this->ENCRYPT_CODE_X);
         for($i = 0; $i < strlen($key); $i++)
-            // $k = ($key + $m) / 2
             $k .= chr(ceil((ord(substr($key, $i, 1)) + ord(substr($m, ($i % strlen($key)) - 1, 1))) / 2));
         return $k;
     }
